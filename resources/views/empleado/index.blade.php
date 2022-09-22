@@ -21,7 +21,14 @@ Mostrar Lista de Empleados
                 <td> {{ $empleado->ApellidoMaterno}} </td>
                 <td> {{ $empleado->Correo}} </td>
                 <td> {{ $empleado->Foto}} </td>
-                <td> Editar | Borrar </td>
+                <td> 
+                    Editar |  
+                    <form action=" {{ url('/empleado/' . $empleado->id) }} " method="post">
+                        @csrf
+                        {{ method_field("DELETE") }}
+                        <input type="submit" onclick="return confirm('¿Deseas elimimar el Empleado?') " value="Borrar">
+                    </form>
+                </td>
             </tr>
         @endforeach
     </tbody>
