@@ -1,1 +1,2 @@
-Formulario de Edición de Formulario
+ 
+ @include('empleado.form')

@@ -22,7 +22,7 @@ Mostrar Lista de Empleados
                 <td> {{ $empleado->Correo}} </td>
                 <td> {{ $empleado->Foto}} </td>
                 <td> 
-                    <a href=" {{url('empleado/ ' . $empleado->id .' /edit') }} "> Editar </a>
+                    <a href=" {{url('/empleado/' . $empleado->id . '/edit') }} "> Editar </a>
                      |  
                     <form action=" {{ url('/empleado/' . $empleado->id) }} " method="post">
                         @csrf
