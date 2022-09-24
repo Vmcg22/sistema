@@ -20,7 +20,11 @@ Mostrar Lista de Empleados
                 <td> {{ $empleado->ApellidoPaterno}} </td>
                 <td> {{ $empleado->ApellidoMaterno}} </td>
                 <td> {{ $empleado->Correo}} </td>
-                <td> {{ $empleado->Foto}} </td>
+                <td> 
+
+                    <img src=" {{ asset('storage'). '/' . $empleado->Foto }} " alt="" srcset="">
+                    
+                </td>
                 <td> 
                     <a href=" {{url('/empleado/' . $empleado->id . '/edit') }} "> Editar </a>
                      |  
