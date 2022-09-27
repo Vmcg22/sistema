@@ -22,7 +22,7 @@ Mostrar Lista de Empleados
                 <td> {{ $empleado->Correo}} </td>
                 <td> 
 
-                    <img src=" {{ asset('storage'). '/' . $empleado->Foto }} " alt="" srcset="">
+                    <img src=" {{ asset('storage'). '/' . $empleado->Foto }} " width="100" alt="" srcset="">
                     
                 </td>
                 <td> 
