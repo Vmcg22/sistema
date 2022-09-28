@@ -46,7 +46,9 @@ class EmpleadoController extends Controller
         }
 
         Empleado::insert($datosEmpleado);
-        return response()->json($datosEmpleado);
+        //return response()->json($datosEmpleado); Devuelve JSON con los datos almacenados en la BD
+        return redirect('empleado')->with('mensaje', 'Empleado Agregado con Éxito');
+
         
     }
 

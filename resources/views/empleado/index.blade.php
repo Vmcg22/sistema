@@ -1,5 +1,9 @@
 Mostrar Lista de Empleados
 
+@if(Session::has('mensaje'))
+    {{Session::get('mensaje')}}
+@endif
+
 <br> <br>
 
 <a href=" {{ url('empleado/create') }} "> Crear Nuevo Empleado</a>
