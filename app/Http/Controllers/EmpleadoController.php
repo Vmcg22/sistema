@@ -118,6 +118,6 @@ class EmpleadoController extends Controller
         }
 
         
-        return redirect("empleado");
+        return redirect("empleado")->with('mensaje', 'Empleado Eliminado con Éxito');
     }
 }
